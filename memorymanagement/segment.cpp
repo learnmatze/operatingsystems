@@ -18,17 +18,19 @@ int main() {
     funktionsZeiger();
 
     // Stack-Segment: Lokale Variable auf dem Stack
-    int localVar = 10;
+    int localVarOne = 10;
+    int localVarTwo = 20;
 
     // Heap-Segment: Dynamische Speicherzuweisung
     int *heapVar = new int;
     *heapVar = 100;
 
     std::cout << "main method (in Code-Segment): " << std::endl;
-    std::cout << "Adresse von simpleFunktion (in Code-Segment): " << &funktionsZeiger << std::endl;
-    std::cout << "Adresse von globalVar (in Data-Segment): " << &globalVar << std::endl;
-    std::cout << "Adresse von localVar (in Stack-Segment): " << &localVar << std::endl;
-    std::cout << "Adresse von heapVar (in Heap-Segment): " << heapVar << std::endl;
+    std::cout << "Memory Adresse von simpleFunktion (in Code-Segment): " << &funktionsZeiger << std::endl;
+    std::cout << "Memory Adresse von globalVar (in Data-Segment): " << &globalVar << std::endl;
+    std::cout << "Memory Adresse von localVarOne (in Stack-Segment): " << &localVarOne << std::endl;
+    std::cout << "Memory Adresse von localVarTwo (in Stack-Segment): " << &localVarTwo << std::endl;
+    std::cout << "Memory Adresse von heapVar (in Heap-Segment): " << heapVar << std::endl;
 
     // Freigabe des Heap-Segments
     delete heapVar;
