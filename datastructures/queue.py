@@ -20,15 +20,19 @@ class Queue:
 # Beispielverwendung der Queue
 queue = Queue()
 
-queue.enqueue(1)
-queue.enqueue(2)
-queue.enqueue(3)
+enqueue_value = 1
+print("Enqueue:", enqueue_value)
+queue.enqueue(enqueue_value)
+enqueue_value = 2
+print("Enqueue:", enqueue_value)
+queue.enqueue(enqueue_value)
+enqueue_value = 3
+print("Enqueue:", enqueue_value)
+queue.enqueue(enqueue_value)
 
-print("Queue-Größe:", queue.size())
-
+print("Queue-Größe nach Enqueue:", queue.size())
 print("Dequeue:", queue.dequeue())
 print("Dequeue:", queue.dequeue())
-
 print("Queue-Größe nach Dequeue:", queue.size())
 print("Dequeue:", queue.dequeue())
 print("Queue-Größe nach Dequeue:", queue.size())
