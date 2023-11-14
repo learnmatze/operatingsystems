@@ -23,7 +23,7 @@ class Process:
 
 if __name__ == "__main__":
     instructions = { "load": 1, "store": 2, "add": 3, "sub": 4, "mul": 5}
-    memory_size = 80
+    memory_size = 50
     memory = Memory(memory_size)
     process1 = Process(1)    
     instructions1 = [(0, 1), (1, 1), (2, 3), (3, 1), (4, 4), (5, 2)]
